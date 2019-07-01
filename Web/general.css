@@ -61,3 +61,10 @@
     margin-bottom: 10px;
 }
 }
+.hide
+{
+	display: none;
+	position: absolute;
+	top:-9999px;
+	left:-9999px;
+}

@@ -1,6 +1,5 @@
 $(window).on('load', function(){
-    YUI().use('calendar', 'datatype-date', 'cssbutton',  function(Y) {
-
+      YUI().use('calendar', 'datatype-date', 'cssbutton',  function(Y) {
         // Create a new instance of calendar, placing it in
         // #mycalendar container, setting its width to 340px,
         // the flags for showing previous and next month's
@@ -25,19 +24,14 @@ $(window).on('load', function(){
           // we expect there to be only one date)
           var newDate = ev.newSelection[0];
           newDate=dtdate.format(newDate);
-          sessionStorage.setItem('key', newDate);
           calendar.hide();
-          
+          $('.time-menu').removeClass("hide");
           // Format the date and output it to a DOM
           // element.
-         // console.log(dtdate.format(newDate));
+          console.log(dtdate.format(newDate));
         });
-        
-        
         });
     
-    
-
 });
 
 function initializeMap() {
@@ -46,8 +40,4 @@ function initializeMap() {
     zoom:5,
     };
     var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
-}
-function data(){
-    let data = sessionStorage.getItem('key');
-    console.log(data);
 }
