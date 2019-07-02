@@ -14,20 +14,60 @@
     <link rel="stylesheet" href="custom.css">
     <link rel="stylesheet" href="https://owlcarousel2.github.io/OwlCarousel2/assets/owlcarousel/assets/owl.carousel.min.css">
     <link rel="stylesheet" href="https://owlcarousel2.github.io/OwlCarousel2/assets/owlcarousel/assets/owl.theme.default.min.css">
-
-        <!-- JS OWL CAROUSEL -->
         
-    <script src="https://owlcarousel2.github.io/OwlCarousel2/assets/vendors/jquery.min.js"></script>
-    <script src="https://owlcarousel2.github.io/OwlCarousel2/assets/owlcarousel/owl.carousel.js"></script>
 </head>
 <body>
     <!--NAVBAR-->
-
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+            <div class="container">
+              <a class="navbar-brand" href="#">LOGO</a>
+              <div class="dropdown ">
+                    <a href="#" id="drop1" data-toggle="dropdown" class="btn btn-default dropdown-toggle" role="button">Dropdown <span class="caret"></span></a>
+                    <ul role="menu" class="dropdown-menu" aria-labelledby="drop1">
+                      <li role="presentation">
+                        <a href="#myModal" data-toggle="modal" role="menuitem">Log in</a>
+                      </li>
+                      <li role="presentation">
+                        <a href="#" role="menuitem">Register</a>
+                      </li>
+                    </ul>
+                  </div>
+            </div>
+          </nav>
     <!--MAIN CONTENT-->
-    <div class="container">
-            <div class="row">
-                <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4"> <!--LATERAL MENU-->
-                    <div class="row lateral-menu">
+    <div id="myModal" class="modal fade">
+            <div class="modal-dialog modal-login">
+                <div class="modal-content">
+                    <div class="modal-header">			
+                        <h4 class="modal-title">Member Login</h4>	
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    </div>
+                    <div class="modal-body">
+                        <form action="/examples/actions/confirmation.php" method="post">
+                            <div class="form-group">
+                                <input type="text" class="form-control" name="username" placeholder="Username" required="required">		
+                            </div>
+                            <div class="form-group">
+                                <input type="password" class="form-control" name="password" placeholder="Password" required="required">	
+                            </div>        
+                            <div class="form-group">
+                                <button type="submit" class="btn btn-primary btn-lg btn-block login-btn">Login</button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <a href="#">Forgot Password?</a>
+                    </div>
+                </div>
+            </div>
+        </div>      
+<div class="text-center">
+  <a href="" class="btn btn-default btn-rounded mb-4" data-toggle="modal" data-target="#modalLoginForm">Launch
+    Modal Login Form</a>
+</div>
+    <div class="container" style="margin:0 auto">
+            <div class="row"> <!--LATERAL MENU-->
+                    <div class= " lateral-menu">
                         <div class="card">
                             <img src="https://www.radiustheme.com/demo/html/medilink/medilink/img/team/team20.png" class="img-thumbnail">
                             <div class="hospital-data">
@@ -36,113 +76,91 @@
                                 <p >NUMELE SPITALULUI</p>
                             </div>
                         </div>
-                        <div class="card">
-                            <h3>Informatii Personale</h3>
-                            <p><b>Numar de telefon: </b>077782933</p>
-                            <p><b>E-mail: </b>email@email.com</p>
-                            <div class="row">
-                                <div class="col-3">
-                                        <b>Social</b>
+                                <div class="card" >
+                                    <h3>Informatii Personale</h3>
+                                    <p><b>Numar de telefon: </b>077782933</p>
+                                    <p><b>E-mail: </b>email@email.com</p>
+                                    <div style="float:left">
+                                        <b>Social: </b>
+                                        <span class="social fab fa-facebook"></span>
+                                        <span class="social fab fa-instagram"></span>
+                                        <span class="social fab fa-twitter"></span>
+                                    </div>
                                 </div>
-                                <div class="col-3">
-                                    <i class="fab fa-facebook"></i>
+                                <div class="card">
+                                        <div id="googleMap" style="width:100%;height:400px !important;"></div>
                                 </div>
-                                <div class="col-3">
-                                        <i class="fab fa-instagram"></i>
-                                    </div> 
-                                <div class="col-3">
-                                        <i class="fab fa-twitter"></i>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card">
-                                <div id="googleMap" style="width:100%;height:400px;"></div>
-                        </div>
+                        
                     </div>
-            </div>
-            <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-8">
                 <div class="card card-right">
                     <h3>Despre mine:</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ac ante tellus. Fusce porta varius nisi nec tincidunt. Donec a iaculis tortor. Vivamus condimentum egestas sem, vel semper elit malesuada quis. Quisque eu nulla leo. Praesent facilisis lectus id mauris dapibus eleifend. In hac habitasse platea dictumst. Nulla faucibus lectus lacus, vel fringilla nulla mollis in.</p>
                     <h3>Educatie: </h3>
-                    <div class="row color-bar-1"> <!--STATIC-->
-                            <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4" >
-                                <p>An</p>
-                            </div>
-                            <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4" >
-                                <p>Diploma</p>
-                            </div>
-                            <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4" >
-                                <p>Institutie</p>
-                            </div>
-                    </div>
-                    <div class="row color-bar-2"> <!--DINAMIC-->
-                        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4" >
-                            <p>2006</p>
-                        </div>
-                        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4" >
-                            <p>Chirurgie</p>
-                        </div>
-                        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4" >
-                            <p>Transilvania</p>
-                        </div>
-                    </div>
-                    <div class="row color-bar-1"> <!--DINAMIC-->
-                        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4" >
-                            <p>2010</p>
-                        </div>
-                        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4" >
-                            <p>Ortoped</p>
-                        </div>
-                        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4" >
-                            <p>UMF</p>
-                        </div>
-                    </div>
+                        <table class="table">
+                                <thead>
+                                  <tr><!--STATIC-->
+                                    <th scope="col">#</th>
+                                    <th scope="col">An</th>
+                                    <th scope="col">Domeniu</th>
+                                    <th scope="col">Facultate</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <th scope="row">1</th>
+                                    <td>Mark</td>
+                                    <td>Otto</td>
+                                    <td>@mdo</td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">2</th>
+                                    <td>Jacob</td>
+                                    <td>Thornton</td>
+                                    <td>@fat</td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">3</th>
+                                    <td>Larry</td>
+                                    <td>the Bird</td>
+                                    <td>@twitter</td>
+                                  </tr>
+                                </tbody>
+                              </table>
                     <br>
                     <h3>Experienta :</h3>
-                    <div class="row color-bar-1"> <!--STATIC-->
-                        <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3" >
-                            <p>An</p>
-                        </div>
-                        <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3" >
-                            <p>Departament</p>
-                        </div>
-                        <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3" >
-                            <p>Pozitie</p>
-                        </div>
-                        <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3" >
-                            <p>Spital</p>
-                        </div>
-                    </div>
-                    <div class="row color-bar-2"> <!--DINAMIC-->
-                        <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3" >
-                            <p>2010-2018</p>
-                        </div>
-                        <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3" >
-                            <p>Lorem</p>
-                        </div>
-                        <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3" >
-                            <p>Ipsum</p>
-                        </div>
-                        <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3" >
-                            <p>Dolor</p>
-                        </div>
-                    </div>
-                    <div class="row color-bar-1"> <!--DINAMIC-->
-                        <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3" >
-                            <p>2010-2018</p>
-                        </div>
-                        <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3" >
-                            <p>Lorem</p>
-                        </div>
-                        <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3" >
-                            <p>Ipsum</p>
-                        </div>
-                        <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3" >
-                            <p>Dolor</p>
-                        </div>
-                    </div>
-                    <div id="demo" class="yui3-skin-sam yui3-g"> <!-- You need this skin class -->
+                    <table class="table">
+                            <thead>
+                              <tr><!--STATIC-->
+                                <th scope="col">#</th>
+                                <th scope="col">An</th>
+                                <th scope="col">Domeniu</th>
+                                <th scope="col">Facultate</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <th scope="row">1</th>
+                                <td>Mark</td>
+                                <td>Otto</td>
+                                <td>@mdo</td>
+                              </tr>
+                              <tr>
+                                <th scope="row">2</th>
+                                <td>Jacob</td>
+                                <td>Thornton</td>
+                                <td>@fat</td>
+                              </tr>
+                              <tr>
+                                <th scope="row">3</th>
+                                <td>Larry</td>
+                                <td>the Bird</td>
+                                <td>@twitter</td>
+                              </tr>
+                            </tbody>
+                          </table>
+                    <h3>Selectati data si ora programarii: </h3>
+                    <div id="demo" class="yui3-skin-sam yui3-g calendar"> <!-- You need this skin class -->
                         <div id="leftcolumn" class="yui3-u">
                            <!-- Container for the calendar -->
                            <div id="mycalendar"></div>
@@ -176,16 +194,98 @@
                             </div>
                         </div>
                         <div class="row">
-                            <button id="data-change" class="btn btn-outline-primary flex-fill" onclick="()">SCHIMBATI DATA</button>
+                            <button id="data-change" class="btn btn-outline-primary flex-fill" onclick="schimbare()">SCHIMBATI DATA</button>
                         </div>
                     </div>
+                    <h3>Inca nemultumit? Optati pentru medici similari:</h3>
+                        <div class="row container">
+                            <div class="owl-carousel owl-theme">
+                                    <div class="item">
+                                        <figure class="card card-product">
+                                            <div class="img-wrap"> <img src="https://www.radiustheme.com/demo/html/medilink/medilink/img/team/team20.png" class="img-thumbnail"></div>
+                                            <figcaption class="info-wrap"style="text-align: center">
+                                            <a href="#" class="title">Medic 1</a>
+                                            <div class="action-wrap">
+                                                <div class="price-wrap h5" style="text-align: center">
+                                                <span class="price-new">RATING</span>
+                                                </div> 
+                                            </div> 
+                                            </figcaption>
+                                        </figure>
+                                    </div>
+                                    <div class="item">
+                                        <figure class="card card-product">
+                                            <div class="img-wrap"> <img src="https://www.radiustheme.com/demo/html/medilink/medilink/img/team/team20.png" class="img-thumbnail"></div>
+                                            <figcaption class="info-wrap"style="text-align: center">
+                                            <a href="#" class="title">Medic 2</a>
+                                            <div class="action-wrap">
+                                                <div class="price-wrap h5" style="text-align: center">
+                                                <span class="price-new">RATING</span>
+                                                </div> 
+                                            </div> 
+                                            </figcaption>
+                                        </figure>
+                                    </div>
+                                    <div class="item">
+                                            <figure class="card card-product">
+                                                <div class="img-wrap"> <img src="https://www.radiustheme.com/demo/html/medilink/medilink/img/team/team20.png" class="img-thumbnail"></div>
+                                                <figcaption class="info-wrap"style="text-align: center">
+                                                <a href="#" class="title">Medic 3</a>
+                                                <div class="action-wrap">
+                                                    <div class="price-wrap h5" style="text-align: center">
+                                                    <span class="price-new">RATING</span>
+                                                    </div> 
+                                                </div> 
+                                                </figcaption>
+                                            </figure>
+                                    </div>
+                                    <div class="item">
+                                            <figure class="card card-product">
+                                                <div class="img-wrap"> <img src="https://www.radiustheme.com/demo/html/medilink/medilink/img/team/team20.png" class="img-thumbnail"></div>
+                                                <figcaption class="info-wrap"style="text-align: center">
+                                                <a href="#" class="title">Medic 4</a>
+                                                <div class="action-wrap">
+                                                    <div class="price-wrap h5" style="text-align: center">
+                                                    <span class="price-new">RATING</span>
+                                                    </div> 
+                                                </div> 
+                                                </figcaption>
+                                            </figure>
+                                    </div>
+                                    <div class="item">
+                                            <figure class="card card-product">
+                                                <div class="img-wrap"> <img src="https://www.radiustheme.com/demo/html/medilink/medilink/img/team/team20.png" class="img-thumbnail"></div>
+                                                <figcaption class="info-wrap"style="text-align: center">
+                                                <a href="#" class="title">Medic 5</a>
+                                                <div class="action-wrap">
+                                                    <div class="price-wrap h5" style="text-align: center">
+                                                    <span class="price-new">RATING</span>
+                                                    </div> 
+                                                </div> 
+                                                </figcaption>
+                                            </figure>
+                                    </div>
+                                    <div class="item">
+                                            <figure class="card card-product">
+                                                <div class="img-wrap"> <img src="https://www.radiustheme.com/demo/html/medilink/medilink/img/team/team20.png" class="img-thumbnail"></div>
+                                                <figcaption class="info-wrap"style="text-align: center">
+                                                <a href="#" class="title">Medic 6   </a>
+                                                <div class="action-wrap">
+                                                    <div class="price-wrap h5" style="text-align: center">
+                                                    <span class="price-new">RATING</span>
+                                                    </div> 
+                                                </div> 
+                                                </figcaption>
+                                            </figure>
+                                    </div>
+                                </div>
+                            </div>
                 </div>
                 </div>
             </div>
         </div>
 
-
-    </div>
+    
 
     <!--FOOTER-->
     <section id="footer">
@@ -226,11 +326,17 @@
         </section>
 
     <!--IMPORT JS-->
-    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="http://cdn.alloyui.com/3.0.1/aui/aui-min.js"></script>
+    <script src="https://owlcarousel2.github.io/OwlCarousel2/assets/vendors/jquery.min.js"></script>
+    <script src="https://owlcarousel2.github.io/OwlCarousel2/assets/owlcarousel/owl.carousel.js"></script>
     <script src="main.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCyLWRNX5aiFNyrSnnIkz4pxQQlAOqDWZ0&callback=initializeMap"></script>
     
 </body>
+
+

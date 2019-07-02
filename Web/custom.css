@@ -6,6 +6,7 @@
 {
     display: inline-block;
     margin-left: 0px !important;
+    margin-right: 0px !important;
 }
 .card
 {
@@ -49,8 +50,12 @@ p
     margin-right:5px;
     border-radius:5px;
 }
-.yui3-button {
-    margin:10px 0px 10px 0px;
-    color: #fff;
-    background-color: #3476b7;
+.social{
+    display:inline;
+    margin:20px;
 }
+.calendar{
+    margin:0 auto;
+    margin-top:20px;
+}
+.
