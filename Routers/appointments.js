@@ -51,7 +51,7 @@ router.post("/:doctorId/:userId",prepareData,async(request,response)=>
 router.delete("/:doctorId/:userId/:id",prepareData,async(request,response)=>
 {
     try{
-      const appoint = request.appointments.find(a=>a.doctorId === request.params.doctorId && a.userId ===request params.userId);
+      const appoint = request.appointments.find(a=>a.doctorId === request.params.doctorId && a.userId ===request.params.userId);
       if(!appoint)
         return response.send({error :"No appointment found"});
       const idToDelete = request.params.id;
