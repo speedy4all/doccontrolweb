@@ -1,92 +1,188 @@
 [
     {
-      "id": "b3ad6cca-8dd6-4536-be43-72fdbf1ccb18",
-      "index": 0,
-      "isActive": true,
-      "picture": "http://placehold.it/64x64",
-      "age": 24,
-      "name": "Sweet Andrews",
-      "gender": "male",
-      "company": "ECSTASIA",
-      "email": "sweetandrews@ecstasia.com",
-      "phone": "+40 (915) 523-3856",
-      "address": "245 Navy Street, Bangor, Connecticut, 1124",
-      "about": "Dolore eiusmod minim reprehenderit consequat magna id ad esse anim. Adipisicing non et anim officia ullamco sit amet veniam Lorem. Reprehenderit minim eiusmod velit commodo minim mollit nisi eu labore et deserunt proident. Proident deserunt sint aute pariatur Lorem officia esse aliqua dolore consequat exercitation aute. Esse aliqua Lorem deserunt laborum aliquip aliquip sunt proident nulla reprehenderit quis ad veniam do. Lorem laborum eiusmod incididunt irure ullamco occaecat.\r\n",
-      "registered": "2016-07-26T12:28:48 -03:00",
-      "latitude": -27.079271,
-      "longitude": 139.83123,
-      "specialty": "cupidatat"
+        "id": "b3ad6cca-8dd6-4536-be43-72fdbf1ccb18",
+        "index": 0,
+        "isActive": true,
+        "picture": "http://placehold.it/64x64",
+        "age": 24,
+        "name": "Sweet Andrews",
+        "gender": "male",
+        "company": "ECSTASIA",
+        "email": "sweetandrews@ecstasia.com",
+        "phone": "+40 (915) 523-3856",
+        "address": "245 Navy Street, Bangor, Connecticut, 1124",
+        "about": "Dolore eiusmod minim reprehenderit consequat magna id ad esse anim. Adipisicing non et anim officia ullamco sit amet veniam Lorem. Reprehenderit minim eiusmod velit commodo minim mollit nisi eu labore et deserunt proident. Proident deserunt sint aute pariatur Lorem officia esse aliqua dolore consequat exercitation aute. Esse aliqua Lorem deserunt laborum aliquip aliquip sunt proident nulla reprehenderit quis ad veniam do. Lorem laborum eiusmod incididunt irure ullamco occaecat.\r\n",
+        "registered": "2016-07-26T12:28:48 -03:00",
+        "latitude": -27.079271,
+        "longitude": 139.83123,
+        "specialty": "cupidatat",
+        "appointments": [
+            {
+                "2019-07-02": [
+                    {
+                        "09:30": true
+                    },
+                    {
+                        "10:00": false
+                    },
+                    {
+                        "10:30": true
+                    }
+                ]
+            },
+            {
+                "2019-07-03": [
+                    {
+                        "09:30": false
+                    },
+                    {
+                        "10:00": true
+                    },
+                    {
+                        "10:30": true
+                    }
+                ]
+            },
+            {
+                "2019-07-02": [
+                    {
+                        "09:30": true
+                    },
+                    {
+                        "10:00": false
+                    },
+                    {
+                        "10:30": true
+                    }
+                ]
+            }
+        ]
     },
     {
-      "id": "40699272-429c-41aa-958f-24ef80c467f9",
-      "index": 1,
-      "isActive": true,
-      "picture": "http://placehold.it/64x64",
-      "age": 41,
-      "name": "Cotton Gutierrez",
-      "gender": "male",
-      "company": "DUOFLEX",
-      "email": "cottongutierrez@duoflex.com",
-      "phone": "+40 (842) 406-2555",
-      "address": "561 Sandford Street, Gasquet, South Dakota, 5744",
-      "about": "Non quis sint cillum sint. Quis amet ad sit adipisicing ullamco nostrud magna id sunt et deserunt. Amet sint id id adipisicing sit occaecat magna ipsum mollit cillum ex aliquip commodo. Excepteur in id dolore adipisicing officia non.\r\n",
-      "registered": "2015-01-11T10:15:46 -02:00",
-      "latitude": 10.158557,
-      "longitude": 90.356171,
-      "specialty": "ex"
+        "id": "40699272-429c-41aa-958f-24ef80c467f9",
+        "index": 1,
+        "isActive": true,
+        "picture": "http://placehold.it/64x64",
+        "age": 41,
+        "name": "Cotton Gutierrez",
+        "gender": "male",
+        "company": "DUOFLEX",
+        "email": "cottongutierrez@duoflex.com",
+        "phone": "+40 (842) 406-2555",
+        "address": "561 Sandford Street, Gasquet, South Dakota, 5744",
+        "about": "Non quis sint cillum sint. Quis amet ad sit adipisicing ullamco nostrud magna id sunt et deserunt. Amet sint id id adipisicing sit occaecat magna ipsum mollit cillum ex aliquip commodo. Excepteur in id dolore adipisicing officia non.\r\n",
+        "registered": "2015-01-11T10:15:46 -02:00",
+        "latitude": 10.158557,
+        "longitude": 90.356171,
+        "specialty": "ex",
+        "appointments": []
     },
     {
-      "id": "7b0f3af7-ee9f-4186-86b4-c985875d4e7a",
-      "index": 2,
-      "isActive": false,
-      "picture": "http://placehold.it/64x64",
-      "age": 36,
-      "name": "Cheryl Banks",
-      "gender": "female",
-      "company": "SENTIA",
-      "email": "cherylbanks@sentia.com",
-      "phone": "+40 (952) 587-2609",
-      "address": "264 Stillwell Avenue, Elbert, Maryland, 8878",
-      "about": "Ea incididunt aute officia commodo velit. Do non est mollit laboris sint non incididunt commodo ipsum duis ad ad. Ad eiusmod ad mollit culpa magna ex nulla aute non ut irure. Esse et nostrud exercitation et velit enim consectetur ut excepteur. Commodo adipisicing eu excepteur Lorem.\r\n",
-      "registered": "2014-06-28T08:29:25 -03:00",
-      "latitude": 75.711709,
-      "longitude": 119.13296,
-      "specialty": "cupidatat"
+        "id": "7b0f3af7-ee9f-4186-86b4-c985875d4e7a",
+        "index": 2,
+        "isActive": false,
+        "picture": "http://placehold.it/64x64",
+        "age": 36,
+        "name": "Cheryl Banks",
+        "gender": "female",
+        "company": "SENTIA",
+        "email": "cherylbanks@sentia.com",
+        "phone": "+40 (952) 587-2609",
+        "address": "264 Stillwell Avenue, Elbert, Maryland, 8878",
+        "about": "Ea incididunt aute officia commodo velit. Do non est mollit laboris sint non incididunt commodo ipsum duis ad ad. Ad eiusmod ad mollit culpa magna ex nulla aute non ut irure. Esse et nostrud exercitation et velit enim consectetur ut excepteur. Commodo adipisicing eu excepteur Lorem.\r\n",
+        "registered": "2014-06-28T08:29:25 -03:00",
+        "latitude": 75.711709,
+        "longitude": 119.13296,
+        "specialty": "cupidatat",
+        "appointments": {
+            "9:00": false,
+            "9:30": false,
+            "10:00": false,
+            "10:30": false,
+            "11:00": false,
+            "11:30": false,
+            "12:00": false,
+            "12:30": false,
+            "13:00": false,
+            "13:30": false,
+            "14:00": false,
+            "14:30": false,
+            "15:00": false,
+            "15:30": false,
+            "16:00": false,
+            "16:30": false
+        }
     },
     {
-      "id": "f61bf6a3-f20f-49c4-a3ac-14e802c7273d",
-      "index": 3,
-      "isActive": false,
-      "picture": "http://placehold.it/64x64",
-      "age": 38,
-      "name": "Nieves Crosby",
-      "gender": "male",
-      "company": "CAPSCREEN",
-      "email": "nievescrosby@capscreen.com",
-      "phone": "+40 (862) 452-3133",
-      "address": "607 John Street, Mahtowa, Illinois, 742",
-      "about": "Enim est ullamco ad est occaecat est. Ea excepteur aute officia commodo elit officia reprehenderit nisi velit irure laborum est consectetur id. Incididunt esse ipsum non consequat do in anim. Non consectetur id velit Lorem.\r\n",
-      "registered": "2018-09-30T04:12:16 -03:00",
-      "latitude": -32.97913,
-      "longitude": -81.988367,
-      "specialty": "magna"
+        "id": "f61bf6a3-f20f-49c4-a3ac-14e802c7273d",
+        "index": 3,
+        "isActive": false,
+        "picture": "http://placehold.it/64x64",
+        "age": 38,
+        "name": "Nieves Crosby",
+        "gender": "male",
+        "company": "CAPSCREEN",
+        "email": "nievescrosby@capscreen.com",
+        "phone": "+40 (862) 452-3133",
+        "address": "607 John Street, Mahtowa, Illinois, 742",
+        "about": "Enim est ullamco ad est occaecat est. Ea excepteur aute officia commodo elit officia reprehenderit nisi velit irure laborum est consectetur id. Incididunt esse ipsum non consequat do in anim. Non consectetur id velit Lorem.\r\n",
+        "registered": "2018-09-30T04:12:16 -03:00",
+        "latitude": -32.97913,
+        "longitude": -81.988367,
+        "specialty": "magna",
+        "appointments": {
+            "9:00": false,
+            "9:30": false,
+            "10:00": false,
+            "10:30": false,
+            "11:00": false,
+            "11:30": false,
+            "12:00": false,
+            "12:30": false,
+            "13:00": false,
+            "13:30": false,
+            "14:00": false,
+            "14:30": false,
+            "15:00": false,
+            "15:30": false,
+            "16:00": false,
+            "16:30": false
+        }
     },
     {
-      "id": "a2f00ac1-0c94-4c7e-87a7-791add95f251",
-      "index": 4,
-      "isActive": false,
-      "picture": "http://placehold.it/64x64",
-      "age": 48,
-      "name": "Nina Downs",
-      "gender": "female",
-      "company": "ZOXY",
-      "email": "ninadowns@zoxy.com",
-      "phone": "+40 (989) 468-3732",
-      "address": "400 Livingston Street, Oasis, New York, 1052",
-      "about": "Eu ullamco consectetur duis sit incididunt sit ut do aliqua duis occaecat esse. Fugiat sunt cupidatat deserunt id exercitation excepteur duis eu exercitation ut. Laboris adipisicing aliqua tempor elit enim. Quis adipisicing exercitation nisi occaecat sunt exercitation adipisicing ad. Minim qui nostrud consequat sunt dolor ipsum excepteur officia laboris magna. Consequat sint sint est irure. Adipisicing excepteur amet et labore aute amet elit.\r\n",
-      "registered": "2019-04-19T08:49:46 -03:00",
-      "latitude": 81.156164,
-      "longitude": -114.499849,
-      "specialty": "esse"
+        "id": "a2f00ac1-0c94-4c7e-87a7-791add95f251",
+        "index": 4,
+        "isActive": false,
+        "picture": "http://placehold.it/64x64",
+        "age": 48,
+        "name": "Nina Downs",
+        "gender": "female",
+        "company": "ZOXY",
+        "email": "ninadowns@zoxy.com",
+        "phone": "+40 (989) 468-3732",
+        "address": "400 Livingston Street, Oasis, New York, 1052",
+        "about": "Eu ullamco consectetur duis sit incididunt sit ut do aliqua duis occaecat esse. Fugiat sunt cupidatat deserunt id exercitation excepteur duis eu exercitation ut. Laboris adipisicing aliqua tempor elit enim. Quis adipisicing exercitation nisi occaecat sunt exercitation adipisicing ad. Minim qui nostrud consequat sunt dolor ipsum excepteur officia laboris magna. Consequat sint sint est irure. Adipisicing excepteur amet et labore aute amet elit.\r\n",
+        "registered": "2019-04-19T08:49:46 -03:00",
+        "latitude": 81.156164,
+        "longitude": -114.499849,
+        "specialty": "esse",
+        "appointments": {
+            "9:00": false,
+            "9:30": false,
+            "10:00": false,
+            "10:30": false,
+            "11:00": false,
+            "11:30": false,
+            "12:00": false,
+            "12:30": false,
+            "13:00": false,
+            "13:30": false,
+            "14:00": false,
+            "14:30": false,
+            "15:00": false,
+            "15:30": false,
+            "16:00": false,
+            "16:30": false
+        }
     }
-  ]
+]
