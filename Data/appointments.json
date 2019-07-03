@@ -1,0 +1,24 @@
+[
+    {
+        "userId": "asdasdasd",
+        "doctorId": "asdasfdfasfasfsa",
+        "appointments": [
+            {
+                "id": "1",
+                "date": "2019-07-02",
+                "hour": "10:00",
+                "status": "pending"
+            }
+        ]
+    },
+    {
+        "userId": "asdasdasd",
+        "doctorId": "3333333333",
+        "appointments": [
+            {
+                "date": "2019-07-02",
+                "hour": "10:00"
+            }
+        ]
+    }
+]

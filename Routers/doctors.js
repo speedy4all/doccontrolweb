@@ -117,7 +117,7 @@ router.delete("/:id", prepareData, async (request, response) => {
     if (!doctorToDelete) {
       return response.send({ error: "No product found" });
     }
-    request.doctors.remove(doctorToDelete);
+    request.doctors.splice(1,request.doctors.indexOf(doctorToDelete));
 
     await writeFileAsync(filePath, JSON.stringify(request.doctors));
 

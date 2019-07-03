@@ -12,7 +12,10 @@ app.use(morganToolkit());
  * Routes
  */
 const doctors = require("./Routers/doctors");
+const appointments = require("./Routers/appointments");
 app.use("/doctors", doctors);
+app.use("/appointments", appointments);
+
 app.use("*", (req, res) => res.end());
 /**
  * End routes
