@@ -13,29 +13,41 @@
     <!-- IMPORT CUSTOM CSS -->
 
     <link rel="stylesheet" href="custom.css">
-    <link rel="stylesheet" href="https://owlcarousel2.github.io/OwlCarousel2/assets/owlcarousel/assets/owl.carousel.min.css">
-    <link rel="stylesheet" href="https://owlcarousel2.github.io/OwlCarousel2/assets/owlcarousel/assets/owl.theme.default.min.css">
 
-    	<!-- JS OWL CAROUSEL -->
-
-    <script src="https://owlcarousel2.github.io/OwlCarousel2/assets/vendors/jquery.min.js"></script>
-  	<script src="https://owlcarousel2.github.io/OwlCarousel2/assets/owlcarousel/owl.carousel.js"></script>
+    
 </head>
 <body>
+	<!--NAVBAR-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+            <div class="container">
+              <a class="navbar-brand" href="#">LOGO</a>
+              <div class="dropdown ">
+                    <a href="#" id="drop1" data-toggle="dropdown" class="btn btn-default dropdown-toggle" role="button">Dropdown <span class="caret"></span></a>
+                    <ul role="menu" class="dropdown-menu" aria-labelledby="drop1">
+                      <li role="presentation">
+                        <a href="#myModal" data-toggle="modal" role="menuitem">Log in</a>
+                      </li>
+                      <li role="presentation">
+                        <a href="#" role="menuitem">Register</a>
+                      </li>
+                    </ul>
+                  </div>
+            </div>
+          </nav>
 <div class="container">
 
-<div class="row" style="margin-top: 40px">
+<div class="row" style="margin-top: 80px">
 	<aside class="col-xs-12 col-sm-12 col-md-12 col-lg-3">
 
 <div class="card card-filter ">
 	<article class="card-group-item">
 		<header class="card-header">
-			<a href="#" data-toggle="collapse" data-target="#collapse44">
+			<a href="#" data-toggle="collapse" data-target="#collapse22">
 				<i class="icon-action fa fa-chevron-down"></i>
 				<h6 class="title">Price range </h6>
 			</a>
 		</header>
-		<div class="filter-content collapse" id="collapse44">
+		<div class="filter-content collapse" id="collapse22">
 			<div class="card-body">
 			<form>
 				<label class="form-check">
@@ -65,12 +77,12 @@
 	</article> <!-- card-group-item.// -->
 	<article class="card-group-item">
 		<header class="card-header">
-			<a href="#" data-toggle="collapse" data-target="#collapse44">
+			<a href="#" data-toggle="collapse" data-target="#collapse33">
 				<i class="icon-action fa fa-chevron-down"></i>
 				<h6 class="title">By Feature </h6>
 			</a>
 		</header>
-		<div class="filter-content collapse" id="collapse44">
+		<div class="filter-content collapse" id="collapse33">
 			<div class="card-body">
 			<form>
 				<label class="form-check">
@@ -254,24 +266,10 @@
 		</section>
 
 		<!-- IMPORT JS -->
-		<script>
-			if(window.innerWidth <= 983)
-			 $('.filter-content').removeClass("show");
-			else
-					   $('.filter-content').addClass("show");
-				$(window).resize(function() 
-				{
-					if ($(window).width() <= 983) 
-						$('.filter-content').removeClass("show");
-					else
-						$('.filter-content').addClass("show");
-			});
-			
-		  </script>
-		  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 		  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-		  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-	
+		  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+	      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+		  <script src="search_result.js"></script>
 </body>
 
 
