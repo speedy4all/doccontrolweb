@@ -173,9 +173,10 @@
               </div>
         </div>
         <h3>Despre Noi:</h3>
-        <button class="collapsible">Open Collapsible</button>
-        <div class="content">
-          <p>Lorem ipsum...djkfsdhgsjkgsd.gj,ksdfgdsanm, fsdfjksbbfsjgdfbdfngdvjhijkbngfgsbndljgnfd</p>
+        <p><a data-toggle="collapse" href="#footwear" aria-expanded="false" aria-controls="footwear">Footwear</a>
+        </p>
+        <div class="collapsible" id="footwear">
+        <p>Footwear refers to garments worn on the feet, which originally serves to purpose of protection against adversities of the environment, usually regarding ground textures and temperature.</p>
         </div>
       </div>
     </div>
@@ -184,19 +185,14 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script>
-        var coll = document.getElementsByClassName("collapsible");
-        var i;
+        // Initialize tooltip component
+        $(function () {
+          $('[data-toggle="tooltip"]').tooltip()
+        })
         
-        for (i = 0; i < coll.length; i++) {
-          coll[i].addEventListener("click", function() {
-            this.classList.toggle("active");
-            var content = this.nextElementSibling;
-            if (content.style.maxHeight){
-              content.style.maxHeight = null;
-            } else {
-              content.style.maxHeight = content.scrollHeight + "px";
-            } 
-          });
-        }
+        // Initialize popover component
+        $(function () {
+          $('[data-toggle="popover"]').popover()
+        })
         </script>
 </body>

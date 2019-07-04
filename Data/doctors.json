@@ -3,7 +3,11 @@
         "id": "b3ad6cca-8dd6-4536-be43-72fdbf1ccb18",
         "index": 0,
         "isActive": true,
+<<<<<<< HEAD
         "picture": "https://medicana.pl/wp-content/uploads/2018/12/DoctorMan.png",
+=======
+        "picture": "https://www.radiustheme.com/demo/html/medilink/medilink/img/team/team20.png",
+>>>>>>> origin/add-feature-search-result
         "age": 24,
         "name": "Sweet Andrews",
         "gender": "male",
@@ -22,6 +26,7 @@
         "rating": 4.5,
         "appointments": [
             {
+<<<<<<< HEAD
               "2019-07-02": [
                   {
                       "09:30": true
@@ -60,6 +65,83 @@
                   }
               ]
           }
+=======
+                "date": "2019-07-02",
+                "hours" : [
+                    {
+                        "09:30": true
+                    },
+                    {
+                        "10:00": false
+                    },
+                    {
+                        "10:30": true
+                    }
+                ]
+            },
+            {
+                "date": "2019-07-05",
+                "hours": [
+                    {
+                        "09:30": false
+                    },
+                    {
+                        "10:00": true
+                    },
+                    {
+                        "10:30": true
+                    }
+                ]
+            },
+            {
+                "date": "2019-07-08",
+                "hours": [
+                    {
+                        "09:30": true
+                    },
+                    {
+                        "10:00": false
+                    },
+                    {
+                        "10:30": true
+                    }
+                ]
+            }
+        ],
+        "experience": [
+            {
+                "period": "2000 - 2010",
+                "domain": "general",
+                "hospital": "St. Luois"
+            },
+            {
+                "period": "2010 - 2015",
+                "domain": "general",
+                "hospital": "St. Markus"
+            },
+            {
+                "period": "2015 - present",
+                "domain": "general",
+                "hospital": "St. Maria"
+            }
+        ],
+        "education": [
+            {
+                "period": "2000 - 2010",
+                "domain": "general",
+                "place": "NUY"
+            },
+            {
+                "period": "2012 - 2015",
+                "domain": "general",
+                "place": "NUY - Master"
+            },
+            {
+                "period": "2016 - 2018",
+                "domain": "general",
+                "place": "Medicine master"
+            }
+>>>>>>> origin/add-feature-search-result
         ]
     },
     {
