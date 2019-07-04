@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<html>
 <head>
     <title>MAIN PAGE</title>
     <meta charset="utf-8">
@@ -12,38 +13,6 @@
     <!-- IMPORT CUSTOM CSS -->
 
     <link rel="stylesheet" href="custom.css">
-    <style>
-      /* Style the button that is used to open and close the collapsible content */
-      .collapsible {
-        background-color: #eee;
-        color: #444;
-        cursor: pointer;
-        padding: 18px;
-        width: 100%;
-        border: none;
-        text-align: left;
-        outline: none;
-        font-size: 15px;
-      }
-
-      /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
-      .active, .collapsible:hover {
-        background-color: #ccc;
-      }
-
-      /* Style the collapsible content. Note: hidden by default */
-      .content {
-        padding: 0 18px;
-        display: none;
-        overflow: hidden;
-        background-color: #f1f1f1;
-          padding: 0 18px;
-          background-color: white;
-          max-height: 0;
-          overflow: hidden;
-          transition: max-height 0.2s ease-out;
-        }
-        </style>
         
         
 </head>
@@ -51,7 +20,7 @@
     <!--NAVBAR-->   
     <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
         <div class="container">
-            <a class="navbar-brand" href="#">LOGO</a>
+            <a class="navbar-brand" href="index.html"><img src="http://radiustheme.com/demo/html/medilink/medilink/img/logo.png"></a>
             <div class="dropdown ">
                 <a href="#" id="drop1" data-toggle="dropdown" class="btn btn-default dropdown-toggle" role="button">Dropdown <span class="caret"></span></a>
                 <ul role="menu" class="dropdown-menu" aria-labelledby="drop1">
@@ -65,9 +34,31 @@
                 </div>
         </div>
     </nav>
+    <div id="myModal" class="modal fade">
+      <div class="modal-dialog modal-login">
+          <div class="modal-content">
+              <div class="modal-header">			
+                  <h4 class="modal-title">Member Login</h4>	
+                  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+              </div>
+              <div class="modal-body">
+                  <form action="/examples/actions/confirmation.php" method="post">
+                      <div class="form-group">
+                          <input type="text" class="form-control" name="username" placeholder="Username" required="required">		
+                      </div>
+                      <div class="form-group">
+                          <input type="password" class="form-control" name="password" placeholder="Password" required="required">	
+                      </div>        
+                      <div class="form-group">
+                          <button type="submit" class="btn btn-primary btn-lg btn-block login-btn">Login</button>
+                      </div>
+                  </form>
+              </div>
+          </div>
+      </div>
+  </div>
     <!--Content-->
-    <div id="demo" class="carousel slide" data-ride="carousel">
-
+    <div id="demo" class="carousel slide" data-ride="carousel" style="margin-top:90px;">
       <!-- Indicators -->
       <ul class="carousel-indicators">
         <li data-target="#demo" data-slide-to="0" class="active"></li>
@@ -78,31 +69,27 @@
       <!-- Wrapper for slides -->
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/b/b5/800x600_Wallpaper_Blue_Sky.png" alt="Chania">
+          <img src="carousel-2.jpg" class="carousel-photo" alt="Chania">
           <div class="carousel-caption">
-            <h3>Los Angeles</h3>
-            <p>LA is always so much fun!</p>
-          </div>
+              <h3>Bine ai venit</h3>
+              <p>pentru a intra in cont te rugam autentificate sau inregistreaza-te acum</p>
+            </div>
         </div>
-    
-        <div class="carousel-item">
-          <img src="http://iipix.com/wallpaper/pics/katasunsethor800.jpg" alt="Chicago">
+        <div class="carousel-item ">
+          <img src="carousel-1.jpg" class="carousel-photo" alt="Chicago">
           <div class="carousel-caption">
             <h3>Chicago</h3>
             <p>Thank you, Chicago!</p>
           </div>
         </div>
-    
         <div class="carousel-item">
-          <img src="http://www.artpoker.net/WallpapersImages/800x600_Pacman.jpg" alt="New York">
+          <img src="carousel-1.jpg" class="carousel-photo" alt="New York">
           <div class="carousel-caption">
             <h3>New York</h3>
             <p>We love the Big Apple!</p>
           </div>
         </div>
       </div>
-    <!-- http://quomodosoft.com/html/healthcare/images/service/service-02.jpg
-      http://quomodosoft.com/html/healthcare/images/aside-image-1.png--> 
       <!-- Left and right controls -->
       <a class="carousel-control-prev" href="#demo" data-slide="prev">
         <span class="carousel-control-prev-icon"></span>
@@ -180,6 +167,44 @@
         </div>
       </div>
     </div>
+    
+     <!--FOOTER-->
+     <section id="footer">
+      <div class="container">
+            <div class="row text-center text-xs-center text-sm-left text-md-left">
+              <div class="col-xs-12 col-sm-4 col-md-4">
+                <h5>Quick links</h5>
+                        <ul class="list-unstyled quick-links">
+                          <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Home</a></li>
+                          <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>About</a></li>
+                          <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>FAQ</a></li>
+                          <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Get Started</a></li>
+                          <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Videos</a></li>
+                        </ul>
+              </div>
+              <div class="col-xs-12 col-sm-4 col-md-4">
+                <h5>Quick links</h5>
+                      <ul class="list-unstyled quick-links">
+                          <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Home</a></li>
+                          <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>About</a></li>
+                          <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>FAQ</a></li>
+                          <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Get Started</a></li>
+                          <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Videos</a></li>
+                      </ul>
+              </div>
+              <div class="col-xs-12 col-sm-4 col-md-4">
+                  <h5>Quick links</h5>
+                      <ul class="list-unstyled quick-links">
+                          <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Home</a></li>
+                          <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>About</a></li>
+                          <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>FAQ</a></li>
+                          <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Get Started</a></li>
+                          <li><a href="https://wwwe.sunlimetech.com" title="Design and developed by"><i class="fa fa-angle-double-right"></i>Imprint</a></li>
+                      </ul>
+              </div>
+          </div>  
+      </div>
+  </section>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.slim.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -196,3 +221,4 @@
         })
         </script>
 </body>
+</html>

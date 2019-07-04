@@ -96,7 +96,7 @@ YUI().use('calendar', 'datatype-date', 'cssbutton', function (Y) {
     // the flags for showing previous and next month's
     // dates in available empty cells to true, and setting
     // the date to today's date.
-
+    
     calendar = new Y.Calendar({
         contentBox: "#mycalendar",
         width: '340px',
