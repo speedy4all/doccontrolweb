@@ -45,13 +45,13 @@
 					<div class="modal-body">
 						<form action="/examples/actions/confirmation.php" method="post">
 							<div class="form-group">
-								<input type="text" class="form-control" name="username" placeholder="Username" required="required">		
+								<input type="text" class="form-control" id="name" name="username" placeholder="Username" required="required">		
 							</div>
 							<div class="form-group">
-								<input type="password" class="form-control" name="password" placeholder="Password" required="required">	
+								<input type="password" class="form-control" id="password" name="password" placeholder="Password" required="required">	
 							</div>        
 							<div class="form-group">
-								<button type="submit" class="btn btn-primary btn-lg btn-block login-btn">Login</button>
+								<button type="submit" class="btn btn-primary btn-lg btn-block login-btn" onclick="logare()">Login</button>
 							</div>
 						</form>
 					</div>
