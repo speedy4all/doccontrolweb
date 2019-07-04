@@ -23,7 +23,7 @@ const processLine = doctor => {
 
 const onListClick = id => {
 	console.log(`clicked ${id}`);
-	window.open(`/profile_page.html?id=${id}`, "_self");
+	window.open(`/profile_pageCopy.html?id=${id}`, "_self");
 }
 
 $(window).on('load', function () {

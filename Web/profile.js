@@ -1,7 +1,7 @@
 var calendar;
 const showDetails = doctor => {
     const container = $('#doctor');
-
+    const containercalendar=$('beforeGoogle')
     const { name, about, phone, picture, id, index, email, specialty, education, experience } = doctor;
 
     container.append(`
@@ -15,7 +15,7 @@ const showDetails = doctor => {
                 <p >NUMELE SPITALULUI</p>
             </div>
         </div>
-                <div class="card" >
+                <div class="card" id="beforeGoogle">
                     <h3>Informatii Personale</h3>
                     <p><b>Numar de telefon: </b>${phone}</p>
                     <p><b>E-mail: </b>${email}</p>
@@ -26,10 +26,8 @@ const showDetails = doctor => {
                         <span class="social fab fa-twitter"></span>
                     </div>
                 </div>
-                <div class="card">
-                        <div id="googleMap" style="width:100%;height:400px !important;"></div>
-                </div>
-        
+                `);
+                container.append(`  
     </div>
 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-8">
 <div class="card card-right">
@@ -79,7 +77,8 @@ const showDetails = doctor => {
         </tr>`)
     )}
             </tbody>
-          </table>
+          </table>`);
+          containercalendar.appendChild(`
     <h3>Selectati data si ora programarii: </h3>
     <div id="demo" class="yui3-skin-sam yui3-g calendar"> <!-- You need this skin class -->
         <div id="leftcolumn" class="yui3-u">
@@ -118,6 +117,9 @@ const showDetails = doctor => {
             <button id="data-change" class="btn btn-outline-primary flex-fill" onclick="schimbare()">SCHIMBATI DATA</button>
         </div>
     </div>
+    
+    `);
+    container.append(`
     <h3>Inca nemultumit? Optati pentru medici similari:</h3>
         <div class="row container">
             <div class="owl-carousel owl-theme">
@@ -205,6 +207,11 @@ const showDetails = doctor => {
 </div>
 </div>
     `);
+    /*
+    containerMaps.append(`
+    <div class="card">
+            <div id="googleMap" style="width:100%;height:400px !important;"></div>
+    </div>`);*/
 
 }
 
