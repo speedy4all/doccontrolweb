@@ -3,7 +3,7 @@
         "id": "b3ad6cca-8dd6-4536-be43-72fdbf1ccb18",
         "index": 0,
         "isActive": true,
-        "picture": "http://placehold.it/64x64",
+        "picture": "https://medicana.pl/wp-content/uploads/2018/12/DoctorMan.png",
         "age": 24,
         "name": "Sweet Andrews",
         "gender": "male",
@@ -16,55 +16,59 @@
         "latitude": -27.079271,
         "longitude": 139.83123,
         "specialty": "cupidatat",
+        "facebook":"https://www.facebook.com/andrew.sweet.948",
+        "instagram":"https://www.instagram.com/andrewsweet43/",
+        "twitter":"https://twitter.com/AndrewSweet",        
+        "rating": 4.5,
         "appointments": [
             {
-                "2019-07-02": [
-                    {
-                        "09:30": true
-                    },
-                    {
-                        "10:00": false
-                    },
-                    {
-                        "10:30": true
-                    }
-                ]
-            },
-            {
-                "2019-07-03": [
-                    {
-                        "09:30": false
-                    },
-                    {
-                        "10:00": true
-                    },
-                    {
-                        "10:30": true
-                    }
-                ]
-            },
-            {
-                "2019-07-02": [
-                    {
-                        "09:30": true
-                    },
-                    {
-                        "10:00": false
-                    },
-                    {
-                        "10:30": true
-                    }
-                ]
-            }
+              "2019-07-02": [
+                  {
+                      "09:30": true
+                  },
+                  {
+                      "10:00": false
+                  },
+                  {
+                      "10:30": true
+                  }
+              ]
+          },
+          {
+              "2019-07-03": [
+                  {
+                      "09:30": false
+                  },
+                  {
+                      "10:00": true
+                  },
+                  {
+                      "10:30": true
+                  }
+              ]
+          },
+          {
+              "2019-07-02": [
+                  {
+                      "09:30": true
+                  },
+                  {
+                      "10:00": false
+                  },
+                  {
+                      "10:30": true
+                  }
+              ]
+          }
         ]
     },
     {
         "id": "40699272-429c-41aa-958f-24ef80c467f9",
         "index": 1,
         "isActive": true,
-        "picture": "http://placehold.it/64x64",
+        "picture": "https://www.chapelhillfamilydoctors.com.au/images/doctor-img2.png",
         "age": 41,
-        "name": "Cotton Gutierrez",
+        "name": "Paul Gutierrez",
         "gender": "male",
         "company": "DUOFLEX",
         "email": "cottongutierrez@duoflex.com",
@@ -75,13 +79,17 @@
         "latitude": 10.158557,
         "longitude": 90.356171,
         "specialty": "ex",
-        "appointments": []
+        "appointments": [],
+        "facebook":"https://www.facebook.com/PGutierrezSports/",
+        "instagram":"https://www.instagram.com/pgutierrez/",
+        "twitter":"https://twitter.com/PGutierrezESPN",
+        "rating": 5.0 
     },
     {
         "id": "7b0f3af7-ee9f-4186-86b4-c985875d4e7a",
         "index": 2,
         "isActive": false,
-        "picture": "http://placehold.it/64x64",
+        "picture": "https://www.radiustheme.com/demo/html/medilink/medilink/img/team/team20.png",
         "age": 36,
         "name": "Cheryl Banks",
         "gender": "female",
@@ -94,33 +102,19 @@
         "latitude": 75.711709,
         "longitude": 119.13296,
         "specialty": "cupidatat",
-        "appointments": {
-            "9:00": false,
-            "9:30": false,
-            "10:00": false,
-            "10:30": false,
-            "11:00": false,
-            "11:30": false,
-            "12:00": false,
-            "12:30": false,
-            "13:00": false,
-            "13:30": false,
-            "14:00": false,
-            "14:30": false,
-            "15:00": false,
-            "15:30": false,
-            "16:00": false,
-            "16:30": false
-        }
+        "facebook":"https://www.facebook.com/banks.cheryl",
+        "instagram":"https://www.instagram.com/cheryl.banks.104/",
+        "twitter":"https://twitter.com/AbamJane",
+        "rating": 3.0 
     },
     {
         "id": "f61bf6a3-f20f-49c4-a3ac-14e802c7273d",
         "index": 3,
         "isActive": false,
-        "picture": "http://placehold.it/64x64",
+        "picture": "https://blogs.elenasmodels.com/wp-content/uploads/2016/10/medical-doctos-russia-1.jpg",
         "age": 38,
         "name": "Nieves Crosby",
-        "gender": "male",
+        "gender": "female",
         "company": "CAPSCREEN",
         "email": "nievescrosby@capscreen.com",
         "phone": "+40 (862) 452-3133",
@@ -130,30 +124,16 @@
         "latitude": -32.97913,
         "longitude": -81.988367,
         "specialty": "magna",
-        "appointments": {
-            "9:00": false,
-            "9:30": false,
-            "10:00": false,
-            "10:30": false,
-            "11:00": false,
-            "11:30": false,
-            "12:00": false,
-            "12:30": false,
-            "13:00": false,
-            "13:30": false,
-            "14:00": false,
-            "14:30": false,
-            "15:00": false,
-            "15:30": false,
-            "16:00": false,
-            "16:30": false
-        }
+        "facebook":"https://www.facebook.com/nieves.crosby.9",
+        "instagram":"https://www.instagram.com/nomcrosby/",
+        "twitter":"https://twitter.com/crosbynieves_",
+        "rating": 5.0 
     },
     {
         "id": "a2f00ac1-0c94-4c7e-87a7-791add95f251",
         "index": 4,
         "isActive": false,
-        "picture": "http://placehold.it/64x64",
+        "picture": "https://www.publicdomainpictures.net/pictures/210000/nahled/doctor-1490804718D0I.jpg",
         "age": 48,
         "name": "Nina Downs",
         "gender": "female",
@@ -166,23 +146,10 @@
         "latitude": 81.156164,
         "longitude": -114.499849,
         "specialty": "esse",
-        "appointments": {
-            "9:00": false,
-            "9:30": false,
-            "10:00": false,
-            "10:30": false,
-            "11:00": false,
-            "11:30": false,
-            "12:00": false,
-            "12:30": false,
-            "13:00": false,
-            "13:30": false,
-            "14:00": false,
-            "14:30": false,
-            "15:00": false,
-            "15:30": false,
-            "16:00": false,
-            "16:30": false
-        }
+        
+        "facebook":"https://www.facebook.com/nina.downs.56",
+        "instagram":"https://www.instagram.com/ninamariadowns/",
+        "twitter":"https://twitter.com/ninamariadowns",
+        "rating": 3.5
     }
 ]

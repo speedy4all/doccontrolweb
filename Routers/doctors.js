@@ -26,6 +26,23 @@ const checkForValidId = (req, res, next) => {
   next();
 };
 
+const checkForValidSpec = (req, res, next) => {
+  if (!req.params.spec) {
+    return res.status(500).send({ error: "Invalid spec param" });
+  }
+  console.log("First validation : OK");
+  next();
+};
+
+function getDocBySpec(doctor,arr)
+{if(doctor.specialty===arr)
+  return doctor;
+  return null;
+};
+
+
+
+
 router.get("/", prepareData, async (request, response) => {
   try {
     let res = request.doctors;
@@ -43,6 +60,7 @@ router.get("/", prepareData, async (request, response) => {
   }
 });
 
+
 router.get(
   "/:id",
   checkForValidId,
@@ -56,13 +74,30 @@ router.get(
         return response.send(doctor);
       }
 
-      return response.status(404).send({ message: "No product found" });
+      return response.status(404).send({ message: "No doctor found" });
     } catch (error) {
       console.log(error);
       return res.status(500).send(error.message);
     }
   }
 );
+
+
+router.get("/specialty/:spec",checkForValidSpec, prepareData, async (request, response) => {
+  console.log("Response function : OK");
+  try {
+    const doctors = request.doctor.map(p=> getDocBySpec(p,params.spec));
+
+    if (doctors) {
+      return response.send(doctors);
+    }
+
+    return response.status(404).send({ message: "No doctor found" });
+  } catch (error) {
+    console.log(error);
+    return res.status(500).send(error.message);
+  }
+});
 
 router.post("/", prepareData, async (request, response) => {
   try {
