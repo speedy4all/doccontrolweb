@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- IMPORT GENERAL CSS -->
+    <link href="https://fonts.googleapis.com/css?family=Questrial|Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
     <link rel="stylesheet" href="general.css">
@@ -21,17 +22,24 @@
     <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
         <div class="container">
             <a class="navbar-brand" href="index.html"><img src="http://radiustheme.com/demo/html/medilink/medilink/img/logo.png"></a>
-            <div class="dropdown ">
-                <a href="#" id="drop1" data-toggle="dropdown" class="btn btn-default dropdown-toggle" role="button">Dropdown <span class="caret"></span></a>
-                <ul role="menu" class="dropdown-menu" aria-labelledby="drop1">
-                    <li role="presentation">
-                    <a href="#myModal" data-toggle="modal" role="menuitem">Log in</a>
-                    </li>
-                    <li role="presentation">
-                    <a href="#" role="menuitem">Register</a>
-                    </li>
-                </ul>
-                </div>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <div id="navbarNavDropdown" class="navbar-collapse collapse">
+              <ul class="navbar-nav mr-auto">
+                  <li class="nav-item">
+                      <a class="nav-link" href="appointments_user-doc.html">Rezervarile tale</a>
+                  </li>
+              </ul>
+              <ul class="navbar-nav">
+                  <li class="nav-item">
+                      <a class="nav-link" href="#myModal" data-toggle="modal">Login</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="register.html">Register</a>
+                  </li>
+              </ul>
+          </div>
         </div>
     </nav>
     <div id="myModal" class="modal fade">
@@ -42,7 +50,7 @@
                   <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
               </div>
               <div class="modal-body">
-                  <form action="/examples/actions/confirmation.php" method="post">
+                  <form action="/login.js" method="post">
                       <div class="form-group">
                           <input type="text" class="form-control" name="username" placeholder="Username" required="required">		
                       </div>
@@ -67,26 +75,31 @@
       </ul>
     
       <!-- Wrapper for slides -->
-      <div class="carousel-inner">
+      <div class="carousel-inner" style="font-size:35px ">
         <div class="carousel-item active">
-          <img src="carousel-2.jpg" class="carousel-photo" alt="Chania">
-          <div class="carousel-caption">
-              <h3>Bine ai venit</h3>
-              <p>pentru a intra in cont te rugam autentificate sau inregistreaza-te acum</p>
+          <img src="carousel-1.jpg" class="carousel-photo" alt="Chania">
+          <div class="carousel-caption" > 
+              <h1>Bine ai venit</h1>
+              <ps>Autentifica-te sau inregistreaza-te acum</p>
+                <div >
+                  <a href="#myModal" data-toggle="modal"><button class="btn btn-outline-secondary btn-lg" style="margin-left:30px">Autentificare</button></a>
+                  <a href="register.html"><button class="btn btn-outline-secondary btn-lg">Inregistrare</button></a>
+                </div>
             </div>
         </div>
         <div class="carousel-item ">
-          <img src="carousel-1.jpg" class="carousel-photo" alt="Chicago">
+          <img src="carousel-2.jpg" class="carousel-photo" alt="Chicago">
           <div class="carousel-caption">
-            <h3>Chicago</h3>
-            <p>Thank you, Chicago!</p>
+            <h1>Asistenta specializata</h1>
+            <p>Medicii nostrii sunt selectati prin criterii de specialitate</p>
           </div>
         </div>
         <div class="carousel-item">
-          <img src="carousel-1.jpg" class="carousel-photo" alt="New York">
-          <div class="carousel-caption">
-            <h3>New York</h3>
-            <p>We love the Big Apple!</p>
+          <img src="carousel-3.jpg" class="carousel-photo" alt="New York">
+          <div class="carousel-caption" style="color:white">
+            <br>
+            <h1>Facem Diferenta!</h1>
+            <p>Spre deosebire de clasica rezervare telefonica <br> noi suntem disponibili exact atunci cand ai tu nevoie,<br> fara asteptari inutile la robotii telefonici</p>
           </div>
         </div>
       </div>
@@ -100,70 +113,117 @@
     </div>
     <div class="container">
       <div class="card depth" style="text-align: center">
-          <h3>Cauta medicul potrivit pentru tine chiar acum!</h3>
+          <h3>CAUTA MEDICUL POTRIVIT PENTRU TINE CHIAR ACUM</h3>
         <div class="row" >
-            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6" style="text-align: left;width: 100%;border: 3px solid red">
+            <div class="col-xs-12 col-sm-12 col-md-5 col-lg-5 rounded">
                 <nav class="navbar navbar-expand-md navbar-expand-sm navbar-expand-xs navbar-expand-lg">
-                    <ul class="navbar-nav nav mr-auto vertical-menu scrolling">
+                    <ul class="navbar-nav nav mr-auto vertical-menu scrolling" style="direction: rtl;">
                       <li class="navbar-header">
                       </li>
-                      <li  class="navbar-collapse collapse lateral grow">
-                          <p class="grow">produs</p>
-                      </li>
-                      <li  class="navbar-collapse collapse lateral">
-                          <p>produs</p>
-                      </li>
-                      <li  class="navbar-collapse collapse lateral">
-                          <p>produs</p>
-                      </li>
-                      <li  class="navbar-collapse collapse lateral">
-                          <p>produs</p>
-                      </li>
-                       <li  class="navbar-collapse collapse lateral">
-                          <p>produs</p>
-                      </li>
-                      <li  class="navbar-collapse collapse lateral">
-                          <p>produs</p>
-                      </li>
-                      <li  class="navbar-collapse collapse lateral">
-                          <p>produs</p>
-                      </li>
-                      <li  class="navbar-collapse collapse lateral">
-                          <p>produs</p>
-                      </li>
-                      <li  class="navbar-collapse collapse lateral">
-                          <p>produs</p>
+                      <li  class="navbar-collapse collapse vertical-menu lateral ">
+                         <button class="btn btn-outline-light text-dark" onclick="newpage('nutritionist')"><p id="nutritionist">Medic Nutritionist</p></button>
                       </li>
                       <li  class="navbar-collapse collapse vertical-menu lateral">
-                          <p>produs</p>
+                          <button class="btn btn-outline-light text-dark" onclick="newpage('pneumolog')"><p id="pneumolog">Medic Pneumolog</p></button>
                       </li>
                       <li  class="navbar-collapse collapse vertical-menu lateral">
-                          <p>produs</p>
+                          <button class="btn btn-outline-light text-dark" onclick="newpage('ortoped')"><p id="ortoped">Medic Ortoped</p></button>
                       </li>
                       <li  class="navbar-collapse collapse vertical-menu lateral">
-                          <p>produs</p>
+                        <button class="btn btn-outline-light text-dark" onclick="newpage('neurolog')"><p id="neurolog">Medic Neurolog</p></button> 
+                      </li>
+                       <li  class="navbar-collapse collapse vertical-menu lateral">
+                          <button class="btn btn-outline-light text-dark" onclick="newpage('psiholog')"><p id="psiholog">Medic Psiholog</p></button>
                       </li>
                       <li  class="navbar-collapse collapse vertical-menu lateral">
-                          <p>produs</p>
-                      </li>
-                      <li  class="navbar-collapse collapse vertical-menu lateral">
-                          <p>produs</p>
-                      </li>
-                      <li  class="navbar-collapse collapse vertical-menu lateral">
-                          <p>produs</p>
+                          <button class="btn btn-outline-light text-dark" onclick="newpage('psihiatru')"><p id="psihiatru">Medic Psihiatru</p></button>
                       </li>
                     </ul>
                   </nav>
             </div>
-            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-                <img src="http://quomodosoft.com/html/healthcare/images/service/service-02.jpg" style="height:450px; width:400px" >
+            <div class="col-xs-12 col-sm-12 col-md-7 col-lg-7">
+                <img src="http://preview.ryetheme.com/medipath/v2/assets/img/about.jpg" class="img-thumbnail" >
               </div>
         </div>
-        <h3>Despre Noi:</h3>
-        <p><a data-toggle="collapse" href="#footwear" aria-expanded="false" aria-controls="footwear">Footwear</a>
-        </p>
-        <div class="collapsible" id="footwear">
-        <p>Footwear refers to garments worn on the feet, which originally serves to purpose of protection against adversities of the environment, usually regarding ground textures and temperature.</p>
+        <h2 style="margin-top:50px"><b>SERVICIILE NOASTRE</b></h2>
+        <p>Indrumari medicale perfectionate</p>
+        <div class="row">
+          <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4">
+            <div class="boxes">
+              <div style="padding: 20px">
+                <span class="fas fa-wheelchair icons"></span>
+                <h3 style="color: #85CB33">Ortopedie</h3> 
+                <p<>TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT
+                    TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEX
+                  T TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4">
+              <div class="boxes">
+                  <div style="padding: 20px">
+                    <span class="fas fa-stethoscope icons"></span>
+                    <h3 style="color: #85CB33">Pneumologie</h3> 
+                    <p<>TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT
+                        TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEX
+                      T TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT </p>
+                  </div>
+                </div>
+          </div>
+          <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4">
+              <div class="boxes">
+                  <div style="padding: 20px">
+                    <span class="fas fa-brain icons"></span>
+                    <h3 style="color: #85CB33">Psihologie</h3> 
+                    <p<>TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT
+                        TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEX
+                      T TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT </p>
+                  </div>
+                </div>
+          </div>
+          <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4">
+              <div class="boxes">
+                  <div style="padding: 20px">
+                    <span class="fab fa-nutritionix icons"></span>
+                    <h3 style="color: #85CB33">Nutritie</h3> 
+                    <p<>TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT
+                        TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEX
+                      T TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT </p>
+                  </div>
+                </div>
+          </div>
+          <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4">
+              <div class="boxes">
+                  <div style="padding: 20px">
+                    <span class="fas fa-user-md icons"></span>
+                    <h3 style="color: #85CB33">Psihiatrie</h3> 
+                    <p<>TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT
+                        TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEX
+                      T TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT </p>
+                  </div>
+                </div>
+          </div>
+          <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4">
+              <div class="boxes">
+                  <div style="padding: 20px">
+                    <span class="fas fa-user-md icons"></span>
+                    <h3 style="color: #85CB33">Neurologie</h3> 
+                    <p<>TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT
+                        TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEX
+                      T TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT </p>
+                  </div>
+                </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-6 numerotare">
+            <span class="fas fa-user-nurse"></span>
+            <p id="meds">0</p>
+          </div>
+          <div class="col-6 numerotare">
+              <span class="fas fa-user"></span>
+              <p id="users">0</p>
+            </div>
         </div>
       </div>
     </div>
@@ -209,16 +269,6 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-    <script>
-        // Initialize tooltip component
-        $(function () {
-          $('[data-toggle="tooltip"]').tooltip()
-        })
-        
-        // Initialize popover component
-        $(function () {
-          $('[data-toggle="popover"]').popover()
-        })
-        </script>
+    <script src="custom.js"></script>
 </body>
 </html>

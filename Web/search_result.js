@@ -1,6 +1,6 @@
-
+const container = $('#doctorList');
 const processLine = doctor => {
-	const container = $('#doctorList');
+	
 
 	const { name, about, phone, picture, id, index } = doctor;
 	container.append(`
@@ -30,7 +30,7 @@ $(window).on('load', function () {
 
 	$(function () {
 		$.ajax({
-			url: "/doctors", success: function (result) {
+			url: `/doctors/${window.location.search.substring(4)}`, success: function (result) {
 				result.forEach(processLine);
 
 			}
@@ -49,4 +49,6 @@ $(window).resize(function () {
 	else
 		$('.filter-content').addClass("show");
 });
-
+function sortare(){
+	
+}

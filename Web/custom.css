@@ -54,3 +54,11 @@ p
     display:inline;
     margin:20px;
 }
+.rounded{
+    text-align: left;
+    width: 100%;
+    border-radius: 30px;
+    border:1px outset #A5B8CD;
+    border-right: 0px !important;
+    border-left:0px !important;
+}

@@ -15,7 +15,8 @@
         "registered": "2016-07-26T12:28:48 -03:00",
         "latitude": -27.079271,
         "longitude": 139.83123,
-        "specialty": "cupidatat",
+        "hospitalType":1,
+        "specialty": "nutritionist",
         "appointments": [
             {
                 "date": "2019-07-02",

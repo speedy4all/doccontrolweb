@@ -1,5 +1,5 @@
 #footer {
-	background: #324d7e !important;
+	background: #4590C1 !important;
 	margin-top:50px;
 }
 #footer h5{
@@ -152,7 +152,8 @@
 .carousel-caption {
     height:100%;
     bottom: 30px;
-    transform: translateY(35%);
+	transform: translateY(35%);
+	color:#7C7C7C;
 }
 .calendar{
     margin:0 auto;
@@ -161,6 +162,7 @@
 .lateral{
 	position:relative;
 	width:98%;
+	text-align: center;
 	height:28%;
 	float:left;
 	padding-top: 10px;
@@ -174,7 +176,6 @@
 	color: #6F6D70;
 	border-bottom: 1px solid #ADABAF;
 	border-radius: 0px;
-	background-color: red;
 }
 .scrolling
 {
@@ -206,10 +207,6 @@
  }
  tr:hover{
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
- }
- .rosu{
-	 background-color: red;
-	 color:red;
  }
   .carousel-photo{
 	 width:100% !important;
@@ -249,4 +246,41 @@
 figure{
 	margin:0px !important;
 	background-color: white;
+}
+body
+{
+	font-family: 'Roboto', sans-serif;
+font-family: 'Questrial', sans-serif;
+}
+.boxes{
+	border:1px solid #4590C1; 
+	text-align: center ;
+	margin-bottom: 25px;
+}
+.icons{
+	border-radius: 360px;
+	border:1px solid #5F2E91;
+	background-color: #5F2E91;
+	color:white;
+	padding: 15px;
+	font-size:35px;
+	margin-top:10px;
+}
+.boxes:hover{
+	background-color: #4590C1;
+	color:white;
+}
+.boxes:hover span{
+	border:1px solid white;
+	background-color: white;
+	color: #85CB33;
+}
+.numerotare{
+	background-color: #5F2E91;
+	color:white;
+	font-size:30px;
+}
+.doctorEXAMPLE{
+	border: 1px solid #4590C1;
+	 border-top:0px !important;
 }
