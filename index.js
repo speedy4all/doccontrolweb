@@ -14,6 +14,8 @@ app.use(express.static('Web'));
  */
 const doctors = require("./Routers/doctors");
 const appointments = require("./Routers/appointments");
+const auth = require("./Routers/userdata");
+app.use("/auth",auth);
 app.use("/doctors", doctors);
 app.use("/appointments", appointments);
 
