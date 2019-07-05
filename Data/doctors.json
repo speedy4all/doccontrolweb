@@ -20,50 +20,6 @@
         "instagram":"https://www.instagram.com/andrewsweet43/",
         "twitter":"https://twitter.com/AndrewSweet",        
         "rating": 4.5,
-        "appointments": [
-            {
-                "date": "2019-07-02",
-                "hours" : [
-                    {
-                        "09:30": true
-                    },
-                    {
-                        "10:00": false
-                    },
-                    {
-                        "10:30": true
-                    }
-                ]
-            },
-            {
-                "date": "2019-07-05",
-                "hours": [
-                    {
-                        "09:30": false
-                    },
-                    {
-                        "10:00": true
-                    },
-                    {
-                        "10:30": true
-                    }
-                ]
-            },
-            {
-                "date": "2019-07-08",
-                "hours": [
-                    {
-                        "09:30": true
-                    },
-                    {
-                        "10:00": false
-                    },
-                    {
-                        "10:30": true
-                    }
-                ]
-            }
-        ],
         "experience": [
             {
                 "period": "2000 - 2010",
@@ -103,7 +59,7 @@
         "id": "b3ad6cca-8dd6-4536-be43-72fdbf1ccb18",
         "index": 0,
         "isActive": true,
-        "picture": "https://www.radiustheme.com/demo/html/medilink/medilink/img/team/team20.png",
+        "picture": "https://img.freepik.com/free-photo/beautiful-young-female-doctor-looking-camera-office_1301-7807.jpg?size=338&ext=jpg",
         "age": 24,
         "name": "Muhamed Alisws",
         "gender": "male",
@@ -115,55 +71,11 @@
         "registered": "2016-07-26T12:28:48 -03:00",
         "latitude": -27.079271,
         "longitude": 139.83123,
-        "specialty": "Nutritionist",
+        "specialty": "Pneumolog",
         "facebook":"https://www.facebook.com/andrew.sweet.948",
         "instagram":"https://www.instagram.com/andrewsweet43/",
         "twitter":"https://twitter.com/AndrewSweet",        
         "rating": 4.5,
-        "appointments": [
-            {
-                "date": "2019-07-02",
-                "hours" : [
-                    {
-                        "09:30": true
-                    },
-                    {
-                        "10:00": false
-                    },
-                    {
-                        "10:30": true
-                    }
-                ]
-            },
-            {
-                "date": "2019-07-05",
-                "hours": [
-                    {
-                        "09:30": false
-                    },
-                    {
-                        "10:00": true
-                    },
-                    {
-                        "10:30": true
-                    }
-                ]
-            },
-            {
-                "date": "2019-07-08",
-                "hours": [
-                    {
-                        "09:30": true
-                    },
-                    {
-                        "10:00": false
-                    },
-                    {
-                        "10:30": true
-                    }
-                ]
-            }
-        ],
         "experience": [
             {
                 "period": "2000 - 2010",
@@ -203,7 +115,7 @@
         "id": "b3ad6cca-8dd6-4536-be43-72fdbf1ccb18",
         "index": 0,
         "isActive": true,
-        "picture": "https://www.radiustheme.com/demo/html/medilink/medilink/img/team/team20.png",
+        "picture": "http://podatnicy.org/wp-content/uploads/2013/09/lekarka.jpg",
         "age": 24,
         "name": "Sabin SDsas",
         "gender": "male",
@@ -215,55 +127,11 @@
         "registered": "2016-07-26T12:28:48 -03:00",
         "latitude": -27.079271,
         "longitude": 139.83123,
-        "specialty": "Nutritionist",
+        "specialty": "Ortoped",
         "facebook":"https://www.facebook.com/andrew.sweet.948",
         "instagram":"https://www.instagram.com/andrewsweet43/",
         "twitter":"https://twitter.com/AndrewSweet",        
         "rating": 4.5,
-        "appointments": [
-            {
-                "date": "2019-07-02",
-                "hours" : [
-                    {
-                        "09:30": true
-                    },
-                    {
-                        "10:00": false
-                    },
-                    {
-                        "10:30": true
-                    }
-                ]
-            },
-            {
-                "date": "2019-07-05",
-                "hours": [
-                    {
-                        "09:30": false
-                    },
-                    {
-                        "10:00": true
-                    },
-                    {
-                        "10:30": true
-                    }
-                ]
-            },
-            {
-                "date": "2019-07-08",
-                "hours": [
-                    {
-                        "09:30": true
-                    },
-                    {
-                        "10:00": false
-                    },
-                    {
-                        "10:30": true
-                    }
-                ]
-            }
-        ],
         "experience": [
             {
                 "period": "2000 - 2010",
@@ -315,18 +183,52 @@
         "registered": "2015-01-11T10:15:46 -02:00",
         "latitude": 10.158557,
         "longitude": 90.356171,
-        "specialty": "ex",
+        "specialty": "Neurolog",
         "appointments": [],
         "facebook":"https://www.facebook.com/PGutierrezSports/",
         "instagram":"https://www.instagram.com/pgutierrez/",
         "twitter":"https://twitter.com/PGutierrezESPN",
-        "rating": 5.0 
+        "rating": 5.0,
+        "experience": [
+            {
+                "period": "2000 - 2010",
+                "domain": "general",
+                "hospital": "St. Luois"
+            },
+            {
+                "period": "2010 - 2015",
+                "domain": "general",
+                "hospital": "St. Markus"
+            },
+            {
+                "period": "2015 - present",
+                "domain": "general",
+                "hospital": "St. Maria"
+            }
+        ],
+        "education": [
+            {
+                "period": "2000 - 2010",
+                "domain": "general",
+                "place": "NUY"
+            },
+            {
+                "period": "2012 - 2015",
+                "domain": "general",
+                "place": "NUY - Master"
+            },
+            {
+                "period": "2016 - 2018",
+                "domain": "general",
+                "place": "Medicine master"
+            }
+        ]
     },
     {
         "id": "7b0f3af7-ee9f-4186-86b4-c985875d4e7a",
         "index": 1,
         "isActive": false,
-        "picture": "https://www.radiustheme.com/demo/html/medilink/medilink/img/team/team20.png",
+        "picture": "https://thumbs.dreamstime.com/z/lekarki-fa%C5%82dowy-r%C4%99k-damy-target419-0-6655039.jpg",
         "age": 36,
         "name": "Cheryl Banks",
         "gender": "female",
@@ -338,11 +240,45 @@
         "registered": "2014-06-28T08:29:25 -03:00",
         "latitude": 75.711709,
         "longitude": 119.13296,
-        "specialty": "cupidatat",
+        "specialty": "Psiholog",
         "facebook":"https://www.facebook.com/banks.cheryl",
         "instagram":"https://www.instagram.com/cheryl.banks.104/",
         "twitter":"https://twitter.com/AbamJane",
-        "rating": 3.0 
+        "rating": 3.0 ,
+        "experience": [
+            {
+                "period": "2000 - 2010",
+                "domain": "general",
+                "hospital": "St. Luois"
+            },
+            {
+                "period": "2010 - 2015",
+                "domain": "general",
+                "hospital": "St. Markus"
+            },
+            {
+                "period": "2015 - present",
+                "domain": "general",
+                "hospital": "St. Maria"
+            }
+        ],
+        "education": [
+            {
+                "period": "2000 - 2010",
+                "domain": "general",
+                "place": "NUY"
+            },
+            {
+                "period": "2012 - 2015",
+                "domain": "general",
+                "place": "NUY - Master"
+            },
+            {
+                "period": "2016 - 2018",
+                "domain": "general",
+                "place": "Medicine master"
+            }
+        ]
     },
     {
         "id": "f61bf6a3-f20f-49c4-a3ac-14e802c7273d",
@@ -360,11 +296,45 @@
         "registered": "2018-09-30T04:12:16 -03:00",
         "latitude": -32.97913,
         "longitude": -81.988367,
-        "specialty": "magna",
+        "specialty": "Psihiatru",
         "facebook":"https://www.facebook.com/nieves.crosby.9",
         "instagram":"https://www.instagram.com/nomcrosby/",
         "twitter":"https://twitter.com/crosbynieves_",
-        "rating": 5.0 
+        "rating": 5.0 ,
+        "experience": [
+            {
+                "period": "2000 - 2010",
+                "domain": "general",
+                "hospital": "St. Luois"
+            },
+            {
+                "period": "2010 - 2015",
+                "domain": "general",
+                "hospital": "St. Markus"
+            },
+            {
+                "period": "2015 - present",
+                "domain": "general",
+                "hospital": "St. Maria"
+            }
+        ],
+        "education": [
+            {
+                "period": "2000 - 2010",
+                "domain": "general",
+                "place": "NUY"
+            },
+            {
+                "period": "2012 - 2015",
+                "domain": "general",
+                "place": "NUY - Master"
+            },
+            {
+                "period": "2016 - 2018",
+                "domain": "general",
+                "place": "Medicine master"
+            }
+        ]
     },
     {
         "id": "a2f00ac1-0c94-4c7e-87a7-791add95f251",
@@ -382,11 +352,45 @@
         "registered": "2019-04-19T08:49:46 -03:00",
         "latitude": 81.156164,
         "longitude": -114.499849,
-        "specialty": "esse",
+        "specialty": "Ortoped",
         
         "facebook":"https://www.facebook.com/nina.downs.56",
         "instagram":"https://www.instagram.com/ninamariadowns/",
         "twitter":"https://twitter.com/ninamariadowns",
-        "rating": 3.5
+        "rating": 3.5,
+        "experience": [
+            {
+                "period": "2000 - 2010",
+                "domain": "general",
+                "hospital": "St. Luois"
+            },
+            {
+                "period": "2010 - 2015",
+                "domain": "general",
+                "hospital": "St. Markus"
+            },
+            {
+                "period": "2015 - present",
+                "domain": "general",
+                "hospital": "St. Maria"
+            }
+        ],
+        "education": [
+            {
+                "period": "2000 - 2010",
+                "domain": "general",
+                "place": "NUY"
+            },
+            {
+                "period": "2012 - 2015",
+                "domain": "general",
+                "place": "NUY - Master"
+            },
+            {
+                "period": "2016 - 2018",
+                "domain": "general",
+                "place": "Medicine master"
+            }
+        ]
     }
 ]
