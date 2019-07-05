@@ -2,9 +2,11 @@ var calendar;
 let selectedDate;
 var lalt =0;
 var long =0;
+var specialitate;
 const hours = ["09:00", "09:30", "10:00", "10:30", "11:00", "11:30", "12:00", "12:30", "13:00", "13:30", "14:00", "14:30", "15:00", "15:30", "16:00"];
 const docdetails = doctor => {
-    const { name, about, phone, picture, id, index, email, specialty, education, experience , facebook, instagram, twitter} = doctor;
+    const { company ,name, about, phone, picture, id, index, email, specialty, education, experience , facebook, instagram, twitter} = doctor;
+    specialitate=specialty;
     const containerlateralprez = $('#doctor-lateral-prez');
     const containerlateralcontact = $('#doctor-lateral-contact');
     const containerschooltable = $('#doctor-school-table');
@@ -16,7 +18,7 @@ const docdetails = doctor => {
         <div class="hospital-data">
             <h3>${name}</h3>
             <p>${specialty}</p>
-            <p>NUMELE SPITALULUI</p>
+            <p>${company}</p>
         </div>
     `);
     containerlateralcontact.append(`
@@ -131,11 +133,6 @@ YUI().use('calendar', 'datatype-date', 'cssbutton', function (Y) {
 $(window).on('load', function () {
 
    
-    $.ajax({
-        url: `/doctors/${window.location.search.substring(4)}`, success: function (result) {
-            result.forEach(processLine);
-        }
-    });
     $('.owl-carousel').owlCarousel({
         loop: true,
         dots: false,
@@ -172,26 +169,6 @@ function verif(date, hour) {
         
     }
 }
-const processLine = doctor => {
-	
-
-    const { name, picture, id, rating } = doctor;
-    const container = $('#docCarousel');
-	container.append(`
-	<div class="item">
-            <figure class="card card-product">
-                <div class="img-wrap"> <img src="${picture}" class="img-thumbnail"></div>
-                <figcaption class="info-wrap"style="text-align: center">
-                <a href="#" class="title">${name}</a>
-                <div class="action-wrap">
-                    <div class="price-wrap h5" style="text-align: center">
-                    <span class="price-new">${rating}</span>
-                    </div> 
-                </div> 
-                </figcaption>
-            </figure>
-    </div>`);
-}
 function ore() {
     $.ajax({
         url: `/appointments/${window.location.search.substring(4)}`, success: function (result) {
@@ -205,8 +182,10 @@ function schimbare() {
     $('.time-menu').addClass("hide");
 }
 function myMap() {
+    console.log(lalt);
+    console.log(long);
     var mapProp= {
-      center:new google.maps.LatLng(51.508742,-0.120850),
+      center:new google.maps.LatLng(lalt,long),
       zoom:5,
     };
     var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
