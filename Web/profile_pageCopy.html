@@ -18,23 +18,30 @@
             
     </head>
     <body>
-        <!--NAVBAR-->
-        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-                <div class="container">
-                  <a class="navbar-brand" href="#">LOGO</a>
-                  <div class="dropdown ">
-                        <a href="#" id="drop1" data-toggle="dropdown" class="btn btn-default dropdown-toggle" role="button">Dropdown <span class="caret"></span></a>
-                        <ul role="menu" class="dropdown-menu" aria-labelledby="drop1">
-                          <li role="presentation">
-                            <a href="#myModal" data-toggle="modal" role="menuitem">Log in</a>
-                          </li>
-                          <li role="presentation">
-                            <a href="#" role="menuitem">Register</a>
-                          </li>
-                        </ul>
-                      </div>
-                </div>
-              </nav>
+        <!--NAVBAR-->  
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="index.html"><img src="http://radiustheme.com/demo/html/medilink/medilink/img/logo.png"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+              </button>
+              <div id="navbarNavDropdown" class="navbar-collapse collapse">
+                  <ul class="navbar-nav mr-auto">
+                      <li class="nav-item">
+                          <a class="nav-link" href="appointments_user-doc.html">Rezervarile tale</a>
+                      </li>
+                  </ul>
+                  <ul class="navbar-nav">
+                      <li class="nav-item">
+                          <a class="nav-link" href="#myModal" data-toggle="modal">Login</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="register.html">Register</a>
+                      </li>
+                  </ul>
+              </div>
+            </div>
+        </nav>
         <!--MAIN CONTENT-->
     <div id="myModal" class="modal fade">
         <div class="modal-dialog modal-login">
@@ -76,6 +83,7 @@
                             <div id="doctor-lateral-contact">
                                     <h3>Informatii Personale</h3>
                             </div>
+                            <div id="googleMap" style="width:100%;height:400px;"></div>
                         </div>
                     </div>
                 </div>
@@ -142,85 +150,11 @@
                         </div>
                         <h3>Inca nemultumit? Optati pentru medici similari:</h3>
                             <div class="row container">
-                                <div class="owl-carousel owl-theme">
-                                        <div class="item">
-                                            <figure class="card card-product" >
-                                                <div class="img-wrap"> <img src="https://www.radiustheme.com/demo/html/medilink/medilink/img/team/team20.png" class="img-thumbnail"></div>
-                                                <figcaption class="info-wrap"style="text-align: center">
-                                                <a href="#" class="title">Medic 1</a>
-                                                <div class="action-wrap">
-                                                    <div class="price-wrap h5" style="text-align: center">
-                                                    <span class="price-new">RATING</span>
-                                                    </div> 
-                                                </div> 
-                                                </figcaption>
-                                            </figure>
-                                        </div>
-                                        <div class="item">
-                                            <figure class="card card-product">
-                                                <div class="img-wrap"> <img src="https://www.radiustheme.com/demo/html/medilink/medilink/img/team/team20.png" class="img-thumbnail"></div>
-                                                <figcaption class="info-wrap"style="text-align: center">
-                                                <a href="#" class="title">Medic 2</a>
-                                                <div class="action-wrap">
-                                                    <div class="price-wrap h5" style="text-align: center">
-                                                    <span class="price-new">RATING</span>
-                                                    </div> 
-                                                </div> 
-                                                </figcaption>
-                                            </figure>
-                                        </div>
-                                        <div class="item">
-                                                <figure class="card card-product">
-                                                    <div class="img-wrap"> <img src="https://www.radiustheme.com/demo/html/medilink/medilink/img/team/team20.png" class="img-thumbnail"></div>
-                                                    <figcaption class="info-wrap"style="text-align: center">
-                                                    <a href="#" class="title">Medic 3</a>
-                                                    <div class="action-wrap">
-                                                        <div class="price-wrap h5" style="text-align: center">
-                                                        <span class="price-new">RATING</span>
-                                                        </div> 
-                                                    </div> 
-                                                    </figcaption>
-                                                </figure>
-                                        </div>
-                                        <div class="item">
-                                                <figure class="card card-product">
-                                                    <div class="img-wrap"> <img src="https://www.radiustheme.com/demo/html/medilink/medilink/img/team/team20.png" class="img-thumbnail"></div>
-                                                    <figcaption class="info-wrap"style="text-align: center">
-                                                    <a href="#" class="title">Medic 4</a>
-                                                    <div class="action-wrap">
-                                                        <div class="price-wrap h5" style="text-align: center">
-                                                        <span class="price-new">RATING</span>
-                                                        </div> 
-                                                    </div> 
-                                                    </figcaption>
-                                                </figure>
-                                        </div>
-                                        <div class="item">
-                                                <figure class="card card-product">
-                                                    <div class="img-wrap"> <img src="https://www.radiustheme.com/demo/html/medilink/medilink/img/team/team20.png" class="img-thumbnail"></div>
-                                                    <figcaption class="info-wrap"style="text-align: center">
-                                                    <a href="#" class="title">Medic 5</a>
-                                                    <div class="action-wrap">
-                                                        <div class="price-wrap h5" style="text-align: center">
-                                                        <span class="price-new">RATING</span>
-                                                        </div> 
-                                                    </div> 
-                                                    </figcaption>
-                                                </figure>
-                                        </div>
-                                        <div class="item">
-                                                <figure class="card card-product">
-                                                    <div class="img-wrap"> <img src="https://www.radiustheme.com/demo/html/medilink/medilink/img/team/team20.png" class="img-thumbnail"></div>
-                                                    <figcaption class="info-wrap"style="text-align: center">
-                                                    <a href="#" class="title">Medic 6   </a>
-                                                    <div class="action-wrap">
-                                                        <div class="price-wrap h5" style="text-align: center">
-                                                        <span class="price-new">RATING</span>
-                                                        </div> 
-                                                    </div> 
-                                                    </figcaption>
-                                                </figure>
-                                        </div>
+                                <div class="owl-carousel owl-theme" id="docCarousel">
+                                        
+                                        
+                                        
+                                       
                                     </div>
                                 </div>
     </div>
@@ -277,5 +211,6 @@
         <script src="https://owlcarousel2.github.io/OwlCarousel2/assets/vendors/jquery.min.js"></script>
         <script src="https://owlcarousel2.github.io/OwlCarousel2/assets/owlcarousel/owl.carousel.js"></script>s
         <script src="test.js"></script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY&callback=myMap"></script>
     </body>
     </html>

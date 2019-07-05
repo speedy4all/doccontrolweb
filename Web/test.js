@@ -1,13 +1,16 @@
 var calendar;
 let selectedDate;
-
+var lalt =0;
+var long =0;
 const hours = ["09:00", "09:30", "10:00", "10:30", "11:00", "11:30", "12:00", "12:30", "13:00", "13:30", "14:00", "14:30", "15:00", "15:30", "16:00"];
 const docdetails = doctor => {
-    const { name, about, phone, picture, id, index, email, specialty, education, experience } = doctor;
+    const { name, about, phone, picture, id, index, email, specialty, education, experience , facebook, instagram, twitter} = doctor;
     const containerlateralprez = $('#doctor-lateral-prez');
     const containerlateralcontact = $('#doctor-lateral-contact');
     const containerschooltable = $('#doctor-school-table');
     const containerexperiencetable = $('#doctor-experience-table');
+    lalt=doctor.latitude;
+    long=doctor.longitude;
     containerlateralprez.append(`
         <img src="${picture}" class="img-thumbnail">
         <div class="hospital-data">
@@ -21,9 +24,9 @@ const docdetails = doctor => {
                 <p><b>E-mail:${email} </b></p>
                 <div style="float:left">
                     <b>Social: </b>
-                    <a href="#"><span class="social fab fa-facebook"></span></a>
-                    <a href="#"><span class="social fab fa-instagram"></span></a>
-                    <a href="#"><span class="social fab fa-twitter"></span></a>
+                    <a href="${facebook}"><span class="social fab fa-facebook"></span></a>
+                    <a href="${instagram}"><span class="social fab fa-instagram"></span></a>
+                    <a href="${twitter}"><span class="social fab fa-twitter"></span></a>
     `);
     containerschooltable.append(`
     ${education.map((element, index) => (`
@@ -127,6 +130,12 @@ YUI().use('calendar', 'datatype-date', 'cssbutton', function (Y) {
 });
 $(window).on('load', function () {
 
+   
+    $.ajax({
+        url: `/doctors/${window.location.search.substring(4)}`, success: function (result) {
+            result.forEach(processLine);
+        }
+    });
     $('.owl-carousel').owlCarousel({
         loop: true,
         dots: false,
@@ -146,6 +155,7 @@ $(window).on('load', function () {
 
     })
 
+
 });
 function verif(date, hour) {
     if (selectedDate === date) {
@@ -162,6 +172,26 @@ function verif(date, hour) {
         
     }
 }
+const processLine = doctor => {
+	
+
+    const { name, picture, id, rating } = doctor;
+    const container = $('#docCarousel');
+	container.append(`
+	<div class="item">
+            <figure class="card card-product">
+                <div class="img-wrap"> <img src="${picture}" class="img-thumbnail"></div>
+                <figcaption class="info-wrap"style="text-align: center">
+                <a href="#" class="title">${name}</a>
+                <div class="action-wrap">
+                    <div class="price-wrap h5" style="text-align: center">
+                    <span class="price-new">${rating}</span>
+                    </div> 
+                </div> 
+                </figcaption>
+            </figure>
+    </div>`);
+}
 function ore() {
     $.ajax({
         url: `/appointments/${window.location.search.substring(4)}`, success: function (result) {
@@ -174,3 +204,10 @@ function schimbare() {
     calendar.show();
     $('.time-menu').addClass("hide");
 }
+function myMap() {
+    var mapProp= {
+      center:new google.maps.LatLng(51.508742,-0.120850),
+      zoom:5,
+    };
+    var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+    }

@@ -30,7 +30,7 @@ $(window).on('load', function () {
 
 	$(function () {
 		$.ajax({
-			url: `/doctors/${window.location.search.substring(4)}`, success: function (result) {
+			url: `/doctors/specialty/${window.location.search.substring(4)}`, success: function (result) {
 				result.forEach(processLine);
 
 			}
@@ -50,5 +50,5 @@ $(window).resize(function () {
 		$('.filter-content').addClass("show");
 });
 function sortare(){
-	
+
 }
