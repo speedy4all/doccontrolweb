@@ -3,11 +3,7 @@
         "id": "b3ad6cca-8dd6-4536-be43-72fdbf1ccb18",
         "index": 0,
         "isActive": true,
-<<<<<<< HEAD
-        "picture": "https://medicana.pl/wp-content/uploads/2018/12/DoctorMan.png",
-=======
         "picture": "https://www.radiustheme.com/demo/html/medilink/medilink/img/team/team20.png",
->>>>>>> origin/add-feature-search-result
         "age": 24,
         "name": "Sweet Andrews",
         "gender": "male",
@@ -26,46 +22,6 @@
         "rating": 4.5,
         "appointments": [
             {
-<<<<<<< HEAD
-              "2019-07-02": [
-                  {
-                      "09:30": true
-                  },
-                  {
-                      "10:00": false
-                  },
-                  {
-                      "10:30": true
-                  }
-              ]
-          },
-          {
-              "2019-07-03": [
-                  {
-                      "09:30": false
-                  },
-                  {
-                      "10:00": true
-                  },
-                  {
-                      "10:30": true
-                  }
-              ]
-          },
-          {
-              "2019-07-02": [
-                  {
-                      "09:30": true
-                  },
-                  {
-                      "10:00": false
-                  },
-                  {
-                      "10:30": true
-                  }
-              ]
-          }
-=======
                 "date": "2019-07-02",
                 "hours" : [
                     {
@@ -141,7 +97,6 @@
                 "domain": "general",
                 "place": "Medicine master"
             }
->>>>>>> origin/add-feature-search-result
         ]
     },
     {

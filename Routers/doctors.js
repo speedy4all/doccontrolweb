@@ -34,11 +34,7 @@ const checkForValidSpec = (req, res, next) => {
   next();
 };
 
-function getDocBySpec(doctor,arr)
-{if(doctor.specialty===arr)
-  return doctor;
-  return null;
-};
+
 
 
 
@@ -71,7 +67,7 @@ router.get(
       const doctor = request.doctors.find(el => el.id == request.params.id);
 
       if (doctor) {
-        return response.send(doctor);
+        response.send(doctor);
       }
 
       return response.status(404).send({ message: "No doctor found" });
@@ -83,21 +79,26 @@ router.get(
 );
 
 
+function getDocBySpec(doc,arr)
+{if(doc.specialty==arr.spec)
+  {return doc;}
+};
+
+
+
 router.get("/specialty/:spec",checkForValidSpec, prepareData, async (request, response) => {
   console.log("Response function : OK");
   try {
-    const doctors = request.doctor.map(p=> getDocBySpec(p,params.spec));
-
-    if (doctors) {
-      return response.send(doctors);
-    }
-
+    const doctor = request.doctors.map(elem=>getDocBySpec(elem,request.params));
+    if(!doctor)
     return response.status(404).send({ message: "No doctor found" });
+    return response.send(doctor);
   } catch (error) {
     console.log(error);
     return res.status(500).send(error.message);
   }
 });
+
 
 router.post("/", prepareData, async (request, response) => {
   try {

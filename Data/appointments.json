@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-[{"userId":"asdasdasd","doctorId":"asdasfdfasfasfsa","appointments":[{"id":"1","date":"2019-07-02","hour":"10:00","status":"pending"}]},{"userId":"asdasdasd","doctorId":"3333333333","appointments":[{"date":"2019-07-02","hour":"10:00"}]},{"userId":"new-user","doctorId":"new-doctor","appointments":[{"date":"2019-07-04","hour":"17:30","id":"31bff15c-99cb-47d9-8956-a80c9bd38632","status":"PENDING"}]},{"userId":"register","doctorId":"auth","appointments":[{"email":"sweetandrews@ecstasia.com","lastname":"Sweeeqt","firstname":"Andrewsas","password":"1234","id":"ea6b0875-4c55-4938-b928-b69d774c3a2b","status":"PENDING"}]}]
-=======
 [
     {
         "userId": "asdasdasd",
@@ -49,4 +46,3 @@
         ]
     }
 ]
->>>>>>> origin/add-feature-search-result
