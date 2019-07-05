@@ -34,6 +34,21 @@ const checkForValidSpec = (req, res, next) => {
   next();
 };
 
+const checkForValidRating = (req, res, next) => {
+  if (!req.params.rate) {
+    return res.status(500).send({ error: "Invalid spec param" });
+  }
+  console.log("First validation : OK");
+  next();
+};
+
+const checkForValidHospital = (req, res, next) => {
+  if (!req.params.type) {
+    return res.status(500).send({ error: "Invalid spec param" });
+  }
+  console.log("First validation : OK");
+  next();
+};
 
 
 
@@ -98,6 +113,54 @@ router.get("/specialty/:spec",checkForValidSpec, prepareData, async (request, re
     return res.status(500).send(error.message);
   }
 });
+
+function getDocByRating(doc,arr)
+{if(arr.rate=="1")
+if(doc.rating>=1&&doc.rating<=3)
+  {return doc;}
+  if(arr.rate=="2")
+  if(doc.rating>=3&&doc.rating<=4)
+  {return doc;}
+  if(arr.rate=="3")
+  if(doc.rating>=4&&doc.rating<=5)
+  {return doc;}
+};
+
+
+
+router.get("/rating/:rate", checkForValidRating, prepareData, async (request, response) => {
+  console.log("Response function : OK");
+  try {
+    const doctor = request.doctors.map(elem=>getDocByRating(elem,request.params));//1,2,3
+    if(!doctor)
+    return response.status(404).send({ message: "No doctor found" });
+    return response.send(doctor);
+  } catch (error) {
+    console.log(error);
+    return res.status(500).send(error.message);
+  }
+});
+
+function getDocByHospital(doc,arr)
+{if(doc.index==arr.type)
+  {return doc;}
+};
+
+
+
+router.get("/hospital/:type",checkForValidHospital, prepareData, async (request, response) => {
+  console.log("Response function : OK");
+  try {
+    const doctor = request.doctors.map(elem=>getDocByHospital(elem,request.params));
+    if(!doctor)
+    return response.status(404).send({ message: "No doctor found" });
+    return response.send(doctor);
+  } catch (error) {
+    console.log(error);
+    return res.status(500).send(error.message);
+  }
+});
+
 
 
 router.post("/", prepareData, async (request, response) => {

@@ -324,7 +324,7 @@
     },
     {
         "id": "7b0f3af7-ee9f-4186-86b4-c985875d4e7a",
-        "index": 2,
+        "index": 1,
         "isActive": false,
         "picture": "https://www.radiustheme.com/demo/html/medilink/medilink/img/team/team20.png",
         "age": 36,
@@ -346,7 +346,7 @@
     },
     {
         "id": "f61bf6a3-f20f-49c4-a3ac-14e802c7273d",
-        "index": 3,
+        "index": 1,
         "isActive": false,
         "picture": "https://blogs.elenasmodels.com/wp-content/uploads/2016/10/medical-doctos-russia-1.jpg",
         "age": 38,
@@ -368,7 +368,7 @@
     },
     {
         "id": "a2f00ac1-0c94-4c7e-87a7-791add95f251",
-        "index": 4,
+        "index": 1,
         "isActive": false,
         "picture": "https://www.publicdomainpictures.net/pictures/210000/nahled/doctor-1490804718D0I.jpg",
         "age": 48,
